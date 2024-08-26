@@ -1,0 +1,92 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color:#e9f1f1 ;
+}
+:root{
+  --primary:#46ce8c;
+  --secodory:#575b5b;
+}
+
+#main{
+  height: 100vh;
+}
+#main p{
+  font-weight: 600;
+  font-size: 40px;
+}
+#main a{
+  font-size: 18px;
+  background-color:transparent;
+  color: black;
+  font-weight: 550;
+  border: 2px solid var(--primary);
+}
+#main a:hover{
+  background-color: var(--primary);
+}
+#main p span{
+  color: var(--primary);
+}
+#navbar{
+  background-color: var(--secodory);
+}
+#navbar a{
+  position:relative;
+  color: white;
+  text-decoration: none;
+  font-weight:500;
+}
+#navbar a::after{
+  position:absolute;
+  content: "";
+  background-color: var(--primary);
+  left:0;
+  width:0;
+  height: 3px;
+  bottom: -10px;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+
+#navbar a:hover:after{
+  width: 100%;
+}
+.headings{
+  padding-bottom: 10px;
+  position: relative;
+  width: min-content;
+}
+.headings::after{
+  position:absolute;
+  content: "";
+  width: 70%;
+  height: 4px;
+  bottom: -5px;
+  left: 15%;
+  background-color: var(--primary);
+
+}
+.card .btn{
+  background-color: var(--primary);
+  border: var(--primary);
+  color:rgb(24, 21, 21);
+  font-weight: 530;
+  width: 125px;
+}
+.card .btn:hover{
+  background-color:#67dfa7;
+  
+}
+#informations{
+  margin-top: 2rem;
+}
+.info{
+  margin-top: 1rem;
+}
+.info span{
+  margin-left: 1rem;
+}
